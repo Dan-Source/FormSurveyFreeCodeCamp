@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Wheel of Time</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/debug.css">
+    <link rel="stylesheet" href="css/-reset.css">
+    <link rel="stylesheet" href="css/-debug.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <style>
-    .container{
-        margin:5%;
-        float: center;
-    }
-    
+
 </style>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="container">
         <header>
-            <h1 id="title"> O que você acha sobre A Roda do Tempo?</h1>
+            <h3 id="title"> O que você acha sobre A Roda do Tempo?</h3>
             <p id="description"> A roda do tempo é um seria com 14 livros que conta a saga de Rand al'Thor e seu companheiros 
                 em mundo repleto de criaturas fantásticas e sociedades complexas. 
             </p>
@@ -30,11 +28,12 @@
             <label id="name-label" for="name">
                 Nome:
             </label>
-            <input 
+        <input 
             type="text" 
             id="name" 
-            name="nme" 
+            name="nome"
             placeholder="Digite seu nome."
+            class = "form-control"
             required>
         </div>
         <div class="form-group">
@@ -44,7 +43,8 @@
             <input 
             type="email" 
             id="email" 
-            name="email" 
+            name="email"
+            class = "form-control"
             required 
             placeholder="Coloque um e-mail válido.">
         </div>
@@ -58,13 +58,14 @@
             id="number" 
             min="0" 
             max="99" 
-            placeholder="Idade.">
+            class = "form-control"
+            placeholder="Idade."> <span class="clue">(Opcional)</span>
         </div>
         <div class="form-group">
             <p>
                 Como você classifica a serie de livros do Robert Jordam.
             </p>
-            <select name="selecione-gostou" id="dropdown" required>
+            <select name="selecione-gostou" id="dropdown"  class = "form-control" required>
                 <option disabled selected value>Seleciona uma opção</option>
                 <option value="Exelente">Excelente</option>
                 <option value="Adoravel">Adoravel</option>
@@ -78,23 +79,23 @@
             <p>Qual é o seu personagem principal favorito?</p>
 
             <label for="rand">
-                <input type="radio" name="favoritos" id="rand" value="rand">
+                <input type="radio" name="favoritos" id="rand" class="input-radio" value="rand">
                 Rand
             </label>
             <label for="perrin">
-                <input type="radio" name="favoritos" id="perrin" value="perrin">
+                <input type="radio" name="favoritos" id="perrin" class="input-radio" value="perrin">
                 Perrin
             </label>
             <label for="egwene">
-                <input type="radio" name="favoritos" id="egwene" value="egwene">
+                <input type="radio" name="favoritos" id="egwene" class="input-radio" value="egwene">
                 Egwene
             </label>
             <label for="nynaeve">
-                <input type="radio" name="favoritos" id="nynaeve" value="nynaeve" >
+                <input type="radio" name="favoritos" id="nynaeve" class="input-radio" value="nynaeve" >
                 Nynaeve
             </label>
             <label for="mat">
-                <input type="radio" name="favoritos" id="mat" value="mat">
+                <input type="radio" name="favoritos" id="mat" class="input-radio" value="mat">
                 Mat
             </label>
         </div>
@@ -103,60 +104,60 @@
                 Quais livros você mais gosta:
             </p>
             <label for="livro1">
-                <input type="checkbox" name="livro1" id="livro1" value="The-Eye-of-the-World">
+                <input type="checkbox" name="livro1" id="livro1" class="input-checkbox" value="The-Eye-of-the-World">
                 The Eye of the World
             </label>
             
             <label for="livro2">
-                <input type="checkbox" name="livro2" id="livro2" value="The Great Hunt"> 	
+                <input type="checkbox" name="livro2" id="livro2" class="input-checkbox" value="The Great Hunt"> 	
                 The Great Hunt
             </label>
             <label for="livro3">
-                <input type="checkbox" name="livro3" id="livro3" value="The Dragon Reborn"> 
+                <input type="checkbox" name="livro3" id="livro3" class="input-checkbox" value="The Dragon Reborn"> 
                 The Dragon Reborn
             </label>
             <label for="livro4">
-                <input type="checkbox" name="livro4" id="livro4" value="The Shadow Rising"> 
+                <input type="checkbox" name="livro4" id="livro4" class="input-checkbox" value="The Shadow Rising"> 
                 The Shadow Rising
             </label>
             <label for="livro5">
-                <input type="checkbox" name="livro5" id="livro5" value="The Fires of Heaven"> 
+                <input type="checkbox" name="livro5" id="livro5" class="input-checkbox" value="The Fires of Heaven"> 
                 The Fires of Heaven
             </label>
             <label for="livro6">
-                <input type="checkbox" name="livro6" id="livro6" value="Lord of Chaos"> 
+                <input type="checkbox" name="livro6" id="livro6" class="input-checkbox" value="Lord of Chaos"> 
                 Lord of Chaos
             </label>
             <label for="livro7">
-                <input type="checkbox" name="livro7" id="livro7" value="A Crown of Swords"> 
+                <input type="checkbox" name="livro7" id="livro7" class="input-checkbox" value="A Crown of Swords"> 
                 A Crown of Swords
             </label>
             <label for="livro8">
-                <input type="checkbox" name="livro8" id="livro8" value="The Path of Daggers"> 
+                <input type="checkbox" name="livro8" id="livro8" class="input-checkbox" value="The Path of Daggers"> 
                 The Path of Daggers
             </label>
             <label for="livro9">
-                <input type="checkbox" name="livro9" id="livro9" value="Winter's Heart"> 
+                <input type="checkbox" name="livro9" id="livro9" class="input-checkbox" value="Winter's Heart"> 
                 Winter's Heart
             </label>
             <label for="livro10">
-                <input type="checkbox" name="livro10" id="livro10" value="Crossroads of Twilight"> 
+                <input type="checkbox" name="livro10" id="livro10" class="input-checkbox" value="Crossroads of Twilight"> 
                 Crossroads of Twilight
             </label>
             <label for="livro11">
-                <input type="checkbox" name="livro11" id="livro11" value="Knife of Dreams"> 
+                <input type="checkbox" name="livro11" id="livro11" class="input-checkbox" value="Knife of Dreams"> 
                 Knife of Dreams
             </label>
             <label for="livro12">
-                <input type="checkbox" name="livro12" id="livro12" value="The Gathering Storm"> 
+                <input type="checkbox" name="livro12" id="livro12" class="input-checkbox" value="The Gathering Storm"> 
                 The Gathering Storm
             </label>
             <label for="livro13">
-                <input type="checkbox" name="livro13" id="livro13" value="Towers of Midnight"> 
+                <input type="checkbox" name="livro13" id="livro13" class="input-checkbox" value="Towers of Midnight"> 
                 Towers of Midnight
             </label>
             <label for="livro14">
-                <input type="checkbox" name="livro14" id="livro14" value="A Memory of Light"> 
+                <input type="checkbox" name="livro14" id="livro14" class="input-checkbox" value="A Memory of Light"> 
                 A Memory of Light
             </label>
         </div>
@@ -164,7 +165,7 @@
             <p>
                 Deixe seus comentarios sobre a WOT:
             </p>
-            <textarea name="comentarios" rows="10" cols="20"> 
+            <textarea name="comentarios" rows="10" cols="20" class="input-textarea" > 
                 
             </textarea>
         </div>
