@@ -7,7 +7,7 @@
     --color-amarelo: #FFC300;
 }
 
-*, *::before, *::after{ box-sizzing: border-box}
+*, *::before, *::after{ box-sizing: border-box}
 
 body{
     font-family: 'Roboto Mono', serif;
