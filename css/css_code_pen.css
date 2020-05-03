@@ -1,45 +1,34 @@
-/* root */
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 
 :root{
-    --color-white: #f3f3f3;
-    --color-darkblue: #1b1b32;
-    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-    --color-green:37af65;
+    --color-verde: #DAF7A6;
+    --color-roxo-escuro: #581845;
+    --color-vinho-escuro: #900C3F;
+    --color-amarelo: #FFC300;
 }
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
+*, *::before, *::after{ box-sizzing: border-box}
 
 body{
-    font-family: 'Poppins', serif;
+    font-family: 'Roboto Mono', serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--color-white);
+    color: var(--color-verde);
     margin: 0;
 }
 
-/* Mobile Friendly Alternative Background */
 body::before{
-    content: '';
+    content:'';
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--color-darkblue);
-    background-image: url(img/wheel-of-time-logo.jpg);
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background: var(--color-roxo-escuro);
 }
 
-/* Style Text */
 h3{
     font-weight: 400;
     line-height: 1.2;
@@ -71,8 +60,9 @@ button{
 }
 
 .container{
-    width: 100%;
+    width: 90%;
     margin: 3.125rem auto 0 auto;
+    padding: 5%;
 }
 
 @media(min-width: 576px){
@@ -105,10 +95,10 @@ button{
 .text-center{
     text-align: center;
 }
-/* form  */
 
+/* form  */
 form{
-    background-color: var(--color-darkblue-alpha);
+    background-color: var(--color-vinho-escuro);
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
 }
@@ -160,8 +150,9 @@ form{
     display: block;
     width: 100%;
     padding: 0.75rem;
-    background: var(--color-green);
-    color: inherit;
+    background: var(--color-amarelo);
+    color: var(--color-roxo-escuro);
+    font-weight: bold;
     border-radius: 2px;
     cursor: point;
 }
